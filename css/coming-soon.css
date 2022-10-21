@@ -195,7 +195,7 @@ body {
 }
 @media only screen and (max-device-width: 425px) 
 {
-  body { height: 713px;}
+  body { height: 100%;}
   .masthead {height: 600px;}
 	.logo{
 	 height: 76px !important;
