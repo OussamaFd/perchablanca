@@ -1,0 +1,252 @@
+html {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Merriweather';
+  font-weight: 700;
+}
+
+body {
+  height: 100%;
+  min-height: 35rem;
+  position: relative;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  background-image: url("https://iili.io/tPspxS.md.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  min-height: 35rem;
+  width: 100%;
+  background-color: #1c1c1cd9;
+  opacity: 0.65;
+  z-index: -1;
+}
+@media (min-width: 768px) {
+  .overlay {
+    min-height: 0;
+  }
+}
+.masthead-content span {
+   width: 80%;
+    display: inline-block;
+}
+.masthead {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 3rem;
+}
+
+.masthead .masthead-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  min-height: 35rem;
+  height: 100%;
+  background-color: rgba(246, 250, 255, 0.8);
+  transform: skewY(4deg);
+  transform-origin: bottom right;
+}
+
+.masthead .masthead-content h1 {
+  font-size: 2.5rem;
+}
+
+.masthead .masthead-content p {
+  font-size: 1.2rem;
+}
+
+.masthead .masthead-content p strong {
+  font-weight: 700;
+}
+.masthead-content i {
+    color: #1c1c1c !important;
+    margin-right: 15px !important; 
+    font-size: 25px;
+	 margin-top: 3px;
+    width: 5%;
+    display: block;
+    float: left;
+}.masthead .masthead-content .input-group-newsletter input {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.masthead .masthead-content .input-group-newsletter button {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .masthead {
+    height: 100%;
+    min-height: 0;
+    width: 40.5rem;
+    padding-bottom: 0;
+  }
+  .masthead .masthead-bg {
+    min-height: 0;
+    transform: skewX(-8deg);
+    transform-origin: top right;
+  }
+  .masthead .masthead-content {
+    padding-left: 2.8rem;
+    padding-right: 10rem;
+}
+  .masthead .masthead-content h1 {
+    font-size: 2.5rem;
+  }
+  .masthead .masthead-content p {
+    font-size: 1.3rem;
+  }
+}
+
+.social-icons {
+  position: absolute;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.social-icons ul {
+  margin-top: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.social-icons ul > li {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: inline-block;
+}
+
+.social-icons ul > li > a {
+  display: inline-block;
+  color: white;
+  background-color: #1c1c1c;
+  border-radius: 100%;
+  font-size: 2rem;
+  line-height: 3rem;
+  height: 3rem;
+  width: 3rem;
+}
+
+@media (min-width: 768px) {
+  .social-icons {
+    margin: 0;
+    position: absolute;
+    right: 2.5rem;
+    bottom: 2rem;
+    width: auto;
+  }
+  .social-icons ul {
+    margin-top: 0;
+    width: auto;
+  }
+  .social-icons ul > li {
+    display: inline-block;
+    /*margin-left: 0;*/
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  .social-icons ul > li:last-child {
+    margin-bottom: 0;
+  }
+  .social-icons ul > li > a {
+    transition: all 0.2s ease-in-out;
+    font-size: 2rem;
+    line-height: 3rem;
+    height: 3rem;
+    width: 3rem;
+  }
+  .social-icons ul > li > a:hover {
+    background-color: #fff;
+    color: #1c1c1c;
+  }
+}
+
+.btn-secondary {
+  background-color: #cd9557;
+  border-color: #cd9557;
+}
+
+.btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
+  background-color: #ba7c37 !important;
+  border-color: #ba7c37 !important;
+}
+
+.input {
+  font-weight: 300 !important;
+}
+@media only screen and (max-device-width: 425px) 
+{
+  body { height: 713px;}
+  .masthead {height: 600px;}
+	.logo{
+	 height: 76px !important;
+    margin: auto  !important; 
+    display: block;
+    margin-bottom: 25px  !important;
+}
+.masthead .masthead-content h1 {
+    font-size: 1.5rem;
+margin-bottom: 50px !important;
+}
+.col-12.my-auto {
+    margin-bottom: 0 !important;
+    margin-top: 20% !important;
+}
+.masthead-content.text-black.py-5.py-md-0 {
+    padding-left: 7%;
+}
+.masthead-content i {
+    margin-top: 3px;
+    width: 5%;
+    display: block;
+    font-size: 21px;
+    float: left;
+}
+.masthead-content span {
+   width: 80%;
+    display: inline-block;
+}
+}
+}
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) 
+{
+  .social-icons{margin:0;position:absolute;right:15rem;bottom:2rem;width:auto}
+}
+@media only screen and (max-device-width: 768px) and (min-device-width: 426px) 
+{
+   .social-icons ul > li {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) 
+{
+  .social-icons{margin:0;position:absolute;right:40rem;bottom:2rem;width:auto}
+}
+@media only screen and (min-device-width: 1441px) 
+{
+  .social-icons{margin:0;position:absolute;right:55rem;bottom:2rem;width:auto}
+}
+
+
